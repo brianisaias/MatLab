@@ -1,0 +1,20 @@
+% define resistors R1 - R5
+R1 = 5;
+R2 = 25;
+R3 = 12;
+R4 = 6;
+R5 = 15;
+
+% define the voltage sources in Volts
+V1 = 110;
+V2 = 45;
+
+% defines the matric coeffcients row by row
+A1 = [1 -1 -1 0 0];
+A2 = [0 0 1 -1 -1];
+A3 = [R1 R2 0 0 0];
+A4 = [0 R2 -R3 -R4 0];
+A5 = [0 0 0 R4 -R5];
+
+% putting the matrix together
+A = [A1; A2; A3; A4; A5]
